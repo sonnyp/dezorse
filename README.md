@@ -39,10 +39,10 @@ dezorse(fn) // will use setTimeout
 // https://github.com/YuzuJS/setImmediate
 dezorse(fn, setImmediate)
 
-// maybe you just need Node.js support and don't care much for throughput ?
+// maybe you just need Node.js support ? (bad example, use dezalgo)
 dezorse(fn, process.nextTick)
 
-// maybe you already have a Promise polyfill or only support platforms with Promise support ?
+// maybe you already have a Promise polyfill or only target platforms with Promise support ?
 dezorse(fn, function () {
   Promise.resolve().then(fn)
 })
