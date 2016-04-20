@@ -1,14 +1,14 @@
 ;(function () {
   'use strict'
 
-  function dezhorse (cb, next) {
+  function dezorse (cb, next) {
     var asap = next || setTimeout
     var sync = true
     asap(function () {
       sync = false
     })
 
-    return function zhorseSafe () {
+    return function zorseSafe () {
       var args = arguments
       var me = this
       if (sync) {
@@ -22,8 +22,8 @@
   }
 
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = dezhorse
+    module.exports = dezorse
   } else {
-    window.dezhorse = dezhorse
+    window.dezorse = dezorse
   }
 }())

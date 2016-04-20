@@ -1,16 +1,16 @@
 'use strict'
 
-var dezhorse = require('./index')
+var dezorse = require('./index')
 var assert = require('assert')
 
-function zhorse (cb) {
+function zorse (cb) {
   cb()
 }
 
-var zhorseSafe = dezhorse(zhorse)
+var zorseSafe = dezorse(zorse)
 
 var called = false
-zhorseSafe(function () {
+zorseSafe(function () {
   called = true
 })
 assert.equal(called, false)

@@ -1,15 +1,16 @@
 {
-  "name": "dezhorse",
+  "name": "dezorse",
   "version": "1.0.1",
   "description": "Like dezalgo but let you choose your \"asap\" function.",
-  "homepage": "https://github.com/sonnyp/dezhorse",
-  "bugs": "https://github.com/sonnyp/dezhorse/issues",
+  "homepage": "https://github.com/sonnyp/dezorse",
+  "bugs": "https://github.com/sonnyp/dezorse/issues",
   "license": "ISC",
   "author": "Sonny Piers <sonny@fastmail.net>",
   "keywords": [
     "async",
     "zalgo",
-    "zhorse"
+    "zorse",
+    "dezalgo"
   ],
   "scripts": {
     "preversion": "npm test",
@@ -17,5 +18,5 @@
     "unit": "node test.js",
     "test": "npm run unit && npm run lint"
   },
-  "repository": "github:sonnyp/dezhorse"
+  "repository": "github:sonnyp/dezorse"
 }
